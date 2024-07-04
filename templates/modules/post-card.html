@@ -59,14 +59,6 @@
       th:classappend="${list_layout == 'grid_3' ? ' sm:line-clamp-8' : ''}"
     ></p>
     <div class="mt-4 flex flex-1 items-center justify-start gap-2">
-      <a th:href="@{${post.owner.permalink}}" th:title="${post.owner.displayName}">
-        <img
-          th:src="${post.owner.avatar ?: #theme.assets('/images/default-avatar.svg')}"
-          th:title="${post.owner.displayName}"
-          th:alt="${post.owner.displayName}"
-          class="size-8 rounded-full border drop-shadow-sm dark:border-slate-700"
-        />
-      </a>
       <a
         th:href="@{${post.owner.permalink}}"
         th:title="${post.owner.displayName}"
