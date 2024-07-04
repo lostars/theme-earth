@@ -95,3 +95,16 @@ body {
 .tailwind-typography {
   @apply prose prose-base mt-4 dark:prose-invert prose-pre:p-0;
 }
+
+.home-post-list {
+  margin-top: 0;
+}
+
+.archives-post {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+*,:before,:after {
+  border-style: none !important;
+}
